@@ -1,7 +1,14 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+    "files": [],
+    "references": [
+        { "path": "./tsconfig.app.json" },
+        { "path": "./tsconfig.node.json" }
+    ],
+    "compilerOptions": {
+        "target": "es6", // Or a later version (e.g., "esnext")
+        "module": "esnext", // Use ES modules
+        "moduleResolution": "node", // Ensure modules are resolved correctly
+        "lib": ["dom", "esnext"], // Include the "dom" library for Chrome extension APIs
+        "types": ["chrome"] // Add the chrome types for type completion
+    }
 }

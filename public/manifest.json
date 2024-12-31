@@ -2,15 +2,29 @@
     "manifest_version": 3,
     "name": "Control Version",
     "description": "This extension changes the version b/w default, next and later",
+    "icons": {
+        "16": "16x16.png",
+        "32": "32x32.png",
+        "48": "48x48.png",
+        "64": "64x64.png",
+        "96": "96x96.png",
+        "128": "128x128.png",
+        "256": "256x256.png"
+    },
+
     "version": "1.0",
     "action": {
-        "default_popup": "popup/popup.html"
+        "default_icon": {
+            "16": "16x16.png",
+            "32": "32x32.png",
+            "48": "48x48.png",
+            "64": "64x64.png",
+            "96": "96x96.png",
+            "128": "128x128.png",
+            "256": "256x256.png"
+        },
+        "default_title": "Control Version",
+        "default_popup": "index.html"
     },
-    "content_scripts": [
-        {
-            "matches": ["*"],
-            "js": ["content.js"]
-        }
-    ],
-    "permissions": ["activeTab", "scripting"]
+    "permissions": ["tabs", "cookies", "activeTab", "storage", "scripting"],
 }

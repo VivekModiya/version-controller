@@ -1,0 +1,29 @@
+.button {
+    all: unset; /* Resets all default button styles */
+    cursor: pointer;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid hsl(221deg 82% 42%);
+    border: 1px solid hsl(221deg 82% 42%);
+    padding: 4px 8px;
+    border-radius: 2px;
+    color: hsl(221deg 82% 42%);
+}
+
+.selected {
+    all: unset; /* Resets all default button styles */
+    cursor: pointer;
+    font-weight: 600;
+    background-color: hsl(221deg 82% 42%);
+    border: 1px solid hsl(221deg 82% 42%);
+    padding: 4px 8px;
+    border-radius: 2px;
+    color: white;
+    pointer-events: none;
+}
+
+.button:hover {
+    background-color: hsl(221deg 100% 97%);
+    border: 1px solid hsl(221deg 82% 42%);
+    color: hsl(221deg 82% 42%);
+}
