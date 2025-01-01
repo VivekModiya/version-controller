@@ -35,7 +35,11 @@ function App() {
                         allFrames: false,
                     },
                     func: (controlVersion: string) => {
-                        document.cookie = `control_version=${controlVersion}`;
+                        const cookieName = 'control_version';
+                        const cookieValue = controlVersion;
+                        const path = '/';
+
+                        document.cookie = `${cookieName}=${cookieValue}; path=${path};`;
                         location.reload();
                     },
                     args: [version],
